@@ -1,0 +1,36 @@
+﻿@model IEnumerable<TestMVCApplication.Models.Movie>
+@{
+    ViewBag.Title = "Home Page";
+}
+
+<h2>List Of Moview released after 2012</h2>
+
+<table>
+    <thead>
+        <tr>
+            <th>@Html.DisplayNameFor(model => model.Movie1)</th>
+            <th>@Html.DisplayNameFor(m => m.Genere)</th>
+            <th>@Html.DisplayNameFor(p => p.ReleaseDate)</th>
+            <th>@Html.DisplayNameFor(model => model.Price)</th>
+        </tr>
+    </thead>
+    <tbody>
+       @foreach(var R in Model)
+       {
+           <tr>
+               <td>@Html.DisplayFor(model => R.Movie1)</td>
+               <td>@Html.DisplayFor(model => R.Genere)</td>
+               <td>@Html.DisplayFor(model => R.ReleaseDate)</td>
+               <td>@Html.DisplayFor(model => R.Price)</td>
+               <td>@Html.ActionLink("Edit", "Edit", new { id = R.Id })</td>
+               <td>@Html.ActionLink("Details", "Details", new { id = R.Id })</td>
+               <td>@Html.ActionLink("Delete", "Delete", new { id = R.Id })</td>
+
+           </tr>
+       }
+    </tbody>
+    
+</table>
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
