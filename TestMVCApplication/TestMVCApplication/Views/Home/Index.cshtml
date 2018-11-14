@@ -17,16 +17,7 @@
     <tbody>
        @foreach(var R in Model)
        {
-           <tr>
-               <td>@Html.DisplayFor(model => R.Movie1)</td>
-               <td>@Html.DisplayFor(model => R.Genere)</td>
-               <td>@Html.DisplayFor(model => R.ReleaseDate)</td>
-               <td>@Html.DisplayFor(model => R.Price)</td>
-               <td>@Html.ActionLink("Edit", "Edit", new { id = R.Id })</td>
-               <td>@Html.ActionLink("Details", "Details", new { id = R.Id })</td>
-               <td>@Html.ActionLink("Delete", "Delete", new { id = R.Id })</td>
-
-           </tr>
+           @Html.Partial("Detail", R)
        }
     </tbody>
     

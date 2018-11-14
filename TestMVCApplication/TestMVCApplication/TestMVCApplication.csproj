@@ -233,6 +233,7 @@
     <Content Include="Views\HelloWorld\Welcome.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\HelloWorld\Create.cshtml" />
+    <Content Include="Views\Home\Detail.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
