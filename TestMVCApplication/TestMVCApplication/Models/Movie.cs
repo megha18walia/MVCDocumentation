@@ -11,6 +11,7 @@ namespace TestMVCApplication.Models
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel;
     using System.ComponentModel.DataAnnotations;
 
     [MetadataType(typeof(MovieMetaData))]
@@ -22,5 +23,33 @@ namespace TestMVCApplication.Models
         public string Genere { get; set; }
         public Nullable<System.DateTime> ReleaseDate { get; set; }
         public Nullable<decimal> Price { get; set; }
+
+        partial void OnGenereChanging(string value);
+       
     }
+
+    public partial class Movie : IDataErrorInfo
+    {
+        private Dictionary<string, string> _errors = new Dictionary<string, string>();
+
+        partial void OnGenereChanging(string value)
+        {
+            if (value.Trim().Length == 0)
+
+                _errors.Add("Genere", "Genere is required");
+        }
+        public string this[string columnName]
+        {
+            get
+            {
+                if (_errors.ContainsKey(columnName))
+                    return _errors[columnName];
+                else
+                    return string.Empty;
+            }
+        }
+        public string Error => string.Empty;
+    }
+
+
 }

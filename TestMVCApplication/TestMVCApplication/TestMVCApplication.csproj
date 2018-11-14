@@ -154,6 +154,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Helper\ImageHelper.cs" />
+    <Compile Include="Helper\LabelHelper.cs" />
     <Compile Include="Models\Movie.cs">
       <DependentUpon>Movies.tt</DependentUpon>
     </Compile>
@@ -182,6 +184,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Image\Test.png" />
     <Content Include="Models\Movies.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <LastGenOutput>Movies.Context.cs</LastGenOutput>
@@ -233,7 +236,7 @@
     <Content Include="Views\HelloWorld\Welcome.cshtml" />
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\HelloWorld\Create.cshtml" />
-    <Content Include="Views\Home\Detail.cshtml" />
+    <Content Include="Views\Home\IndexPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

@@ -37,7 +37,7 @@ namespace TestMVCApplication.Controllers
         }
 
         [HttpPost]
-       public ActionResult Create(Movie movie)
+       public ActionResult Create([Bind(Exclude = "Id")]Movie movie)
         {
             if(ModelState.IsValid)
             {

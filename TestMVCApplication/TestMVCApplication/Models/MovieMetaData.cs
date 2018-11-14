@@ -13,7 +13,6 @@ namespace TestMVCApplication.Models
         public string Movie1
         { get; set; }
 
-        [Required(ErrorMessage ="Please Add the Genere")]
         public string Genere
         { get; set; }
 

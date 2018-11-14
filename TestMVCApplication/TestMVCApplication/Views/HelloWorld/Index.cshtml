@@ -1,8 +1,13 @@
-﻿
+﻿@using TestMVCApplication.Helper
 @{
     ViewBag.Title = "Index";
 }
 
 <h2>Index</h2>
 <h3>Hello World</h3>
+@Html.Raw(Html.Label("Welcome", "Welcome to the brand new helper", 1))
+@Html.TextArea("hjgswd")
+@Html.Raw(Html.Image("testHelperImg", "/Image/Test.png", "Test Image", 200, 200))
+
+
 
