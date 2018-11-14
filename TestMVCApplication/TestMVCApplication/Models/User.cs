@@ -12,12 +12,10 @@ namespace TestMVCApplication.Models
     using System;
     using System.Collections.Generic;
     
-    public partial class Movie
+    public partial class User
     {
-        public int Id { get; set; }
-        public string Movie1 { get; set; }
-        public string Genere { get; set; }
-        public Nullable<System.DateTime> ReleaseDate { get; set; }
-        public Nullable<decimal> Price { get; set; }
+        public string Id { get; set; }
+        public string FirstName { get; set; }
+        public string LastName { get; set; }
     }
 }

@@ -26,5 +26,6 @@ namespace TestMVCApplication.Models
         }
     
         public virtual DbSet<Movie> Movies { get; set; }
+        public virtual DbSet<User> Users { get; set; }
     }
 }

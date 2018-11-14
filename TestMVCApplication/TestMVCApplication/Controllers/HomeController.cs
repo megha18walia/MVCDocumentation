@@ -7,7 +7,7 @@ using TestMVCApplication.Models;
 
 namespace TestMVCApplication.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : ApplicationController
     {
         public ActionResult Index()
         {

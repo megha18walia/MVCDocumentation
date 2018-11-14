@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace TestMVCApplication.Controllers
 {
-    public class HelloWorldController : Controller
+    public class HelloWorldController : ApplicationController
     {
         // GET: HelloWorld
         public ActionResult Index()

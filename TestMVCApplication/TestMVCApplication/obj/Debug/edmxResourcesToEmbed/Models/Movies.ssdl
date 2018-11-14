@@ -10,7 +10,16 @@
     <Property Name="ReleaseDate" Type="datetime" />
     <Property Name="Price" Type="decimal" Precision="18" Scale="0" />
   </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="varchar" MaxLength="4" Nullable="false" />
+    <Property Name="FirstName" Type="varchar" MaxLength="50" />
+    <Property Name="LastName" Type="varchar(max)" />
+  </EntityType>
   <EntityContainer Name="MoviesModelStoreContainer">
     <EntitySet Name="Movie" EntityType="Self.Movie" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="User" EntityType="Self.User" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>
