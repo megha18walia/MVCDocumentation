@@ -3,9 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using TestMVCApplication.Helper;
 
 namespace TestMVCApplication.Controllers
 {
+    [LogActionFilter]
     public class HelloWorldController : ApplicationController
     {
         // GET: HelloWorld
@@ -24,7 +26,16 @@ namespace TestMVCApplication.Controllers
 
             return View(wcm);
         }
+
+        [OutputCache(Duration = 10)]
+        public ActionResult Time()
+        {
+            ViewData["message"] = DateTime.Now.ToString();
+            return View();
+        }
     }
+
+  
 
     public class WelcomeViewModel
     {

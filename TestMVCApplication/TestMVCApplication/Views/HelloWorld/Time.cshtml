@@ -1,0 +1,9 @@
+﻿
+@using TestMVCApplication.Helper
+<h1>Test Time Caching</h1>
+<h2>@ViewData["message"]</h2>
+<h3>@DateTime.Now.ToString()</h3>
+
+@{
+    Response.WriteSubstitution(PostCache.RenderUpdatedCache);
+}

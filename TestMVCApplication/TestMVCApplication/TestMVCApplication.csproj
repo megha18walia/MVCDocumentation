@@ -157,6 +157,8 @@
     </Compile>
     <Compile Include="Helper\ImageHelper.cs" />
     <Compile Include="Helper\LabelHelper.cs" />
+    <Compile Include="Helper\LogActionFilter.cs" />
+    <Compile Include="Helper\PostCache.cs" />
     <Compile Include="Models\Movie.cs">
       <DependentUpon>Movies.tt</DependentUpon>
     </Compile>
@@ -241,10 +243,10 @@
     <Content Include="Views\Home\Create.cshtml" />
     <Content Include="Views\HelloWorld\Create.cshtml" />
     <Content Include="Views\Home\IndexPartial.cshtml" />
+    <Content Include="Views\HelloWorld\Time.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Application\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
