@@ -1,0 +1,27 @@
+﻿@model  IEnumerable<ASPNetWebAppDemo.Models.Student>
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Student</h2>
+
+<table>
+    <tr>
+        <th>@Html.DisplayNameFor(m => m.FirstName)</th>
+        <th>@Html.DisplayNameFor(m => m.LastName)</th>
+        <th>@Html.DisplayNameFor(m => m.EnrollmentDate)</th>
+    </tr>
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>@Html.DisplayFor(c => item.FirstName)</td>
+            <td>@Html.DisplayFor(d => item.LastName)</td>
+            <td>@Html.DisplayFor(m => item.EnrollmentDate)</td>
+            <td>@Html.ActionLink("Edit", "Edit", new { id = item.ID})</td>
+            <td>@Html.ActionLink("Detail", "Detail", new { id = item.ID })</td>
+            <td>@Html.ActionLink("Delete", "Delete", new { id = item.ID })</td>
+        </tr>
+    }
+
+</table>
+

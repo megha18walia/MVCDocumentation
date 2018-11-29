@@ -22,6 +22,9 @@ namespace ASPNetWebAppDemo.DAL
             new Student{FirstName="Nino",LastName="Olivetto",EnrollmentDate=DateTime.Parse("2005-09-01")}
             };
 
+            students.ForEach(s => context.Students.Add(s));
+            context.SaveChanges();
+
             var courses = new List<Course>
             {
                   new Course{CourseId=1050,Title="Chemistry",Credits=3,},
@@ -32,6 +35,9 @@ namespace ASPNetWebAppDemo.DAL
             new Course{CourseId=2021,Title="Composition",Credits=3,},
             new Course{CourseId=2042,Title="Literature",Credits=4,}
             };
+
+            courses.ForEach(c => context.Courses.Add(c));
+            context.SaveChanges();
 
             var enrollments = new List<Enrollment>
             {
@@ -48,6 +54,9 @@ namespace ASPNetWebAppDemo.DAL
             new Enrollment{StudentId=6,CourseId=1045},
             new Enrollment{StudentId=7,CourseId=3141,Grade=Grade.A},
             };
+
+            enrollments.ForEach(e => context.Enrollments.Add(e));
+            context.SaveChanges();
         }
     }
 }

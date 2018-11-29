@@ -65,3 +65,7 @@ C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebA
 C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\obj\Debug\ASPNetWebAppDemo.csprojResolveAssemblyReference.cache
 C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\obj\Debug\ASPNetWebAppDemo.dll
 C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\obj\Debug\ASPNetWebAppDemo.pdb
+C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\bin\EntityFramework.dll
+C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\bin\EntityFramework.SqlServer.dll
+C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\bin\EntityFramework.xml
+C:\Users\mwalia\Source\Repos\MVCDocumentation\MVCEF6\ASPNetWebAppDemo\ASPNetWebAppDemo\bin\EntityFramework.SqlServer.xml
